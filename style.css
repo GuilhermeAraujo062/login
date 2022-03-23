@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Sacramento&display=swap');
+
+:root {
+    --fonte01: 'Poppins', sans-serif;
+    --fonte02: 'Sacramento', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body, html {
+    font-family: var(--fonte01);
+    font-weight: 200;
+
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgba(56, 56, 56, 0.363);
+    backdrop-filter: blur(2px);
+
+    position: absolute;
+    width: 598px;
+    height: 100%;
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: var(--fonte02);
+    font-weight: 200;
+
+    margin-top: 144px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 480px;
+    height: 50px;
+}
+
+.login > input {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.164);
+    color: white;
+    border: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+button {
+    background-color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+
+    border-radius: 50px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.808);
+}
